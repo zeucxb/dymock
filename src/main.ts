@@ -1,5 +1,5 @@
-import R from 'ramda';
+import math from './core/math';
 
-const value: number = R.add(8)(10);
+const value: number = math.sum_2000(18);
 
-console.log(`Hello 20${value}`);
+console.log(`Hello ${value}`);
