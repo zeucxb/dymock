@@ -23,10 +23,6 @@
   },
   "homepage": "https://github.com/zeucxb/dymock#readme",
   "dependencies": {
-    "ramda": "^0.25.0",
-    "typescript": "^2.8.3"
-  },
-  "devDependencies": {
-    "@types/ramda": "github:types/npm-ramda#dist"
+    "ramda": "^0.25.0"
   }
 }
