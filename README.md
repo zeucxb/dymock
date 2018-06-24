@@ -1,4 +1,4 @@
-# Dymock
+# Dymock :alien: :boom:
 [![NPM version](https://badge.fury.io/js/dymock.svg)](https://npmjs.org/package/dymock)
 
 > A CLI to simplify the way you create mocks, dynamic REST APIs mocks. :boom:
