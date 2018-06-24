@@ -1,6 +1,6 @@
 {
   "name": "dymock",
-  "version": "0.1.0",
+  "version": "0.1.2",
   "description": "A CLI to simplify the way you create docs and mocks.",
   "main": "main.js",
   "bin": "bin/main.js",
