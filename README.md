@@ -1,4 +1,5 @@
 # Dymock
+[![NPM version](https://badge.fury.io/js/dymock.svg)](https://npmjs.org/package/dymock)
 > A CLI to simplify the way you create mocks, dynamic REST APIs mocks.
 
 Dymock allows you to build a mock server in a simple way, without programing, focusing on configuration files.
