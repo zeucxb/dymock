@@ -1,10 +1,22 @@
 # Dymock
 [![NPM version](https://badge.fury.io/js/dymock.svg)](https://npmjs.org/package/dymock)
-> A CLI to simplify the way you create mocks, dynamic REST APIs mocks.
 
-Dymock allows you to build a mock server in a simple way, without programing, focusing on configuration files.
+> A CLI to simplify the way you create mocks, dynamic REST APIs mocks. :boom:
 
-It gives you the power to dynamically define witch response send back, based on params match.
+Dymock allows you to build **a mock server in a simple way**, without programing, focusing on configuration files.
+
+It gives you the power to **dynamically define witch response send back, based on params match.**
+
+### Proposal
+
+Create a tool that help us to unblock the mobile or frontend, API integration process. Making possible work in teams without API dependences at the development time.
+
+So, Dymock should be a way to organize and define APIs contracts together (front/mobile | backend) and enable a simulation of the real API.
+
+##### _Summary_
+
+> Basically, we allows you to **build and run** a server, just with config files, that can send back **different responses based on the params received** in the request.
+
 
 ### Installation
 
@@ -24,7 +36,18 @@ GET /user/login
 DIR ./url/user/login/(config.js OR config.json)
 ```
 
-This config file can be a **json** or a **js** file, we recommend **js** to simplify the organization using `require` to import the response file.
+---
+
+
+The config file need to be named as `config` and is responsible to define two things:
+
+ - **options:** a list (array) of:
+ 	- **params:** the params that we can match in. `You don't need to set all the request, just params that you wanna match.`
+ 	- **response:** the object we'll return if match the params.
+
+- **default:** a default response if nothing match.
+
+> This config file can be a **json** or a **js** file, we recommend **js** to simplify the organization using `require` to import the response file.
 
 e.g.
 
@@ -131,4 +154,4 @@ e.g.
   },
 ]
 ```
-> Remember: **If you create this config file the default mechanism will be disabled.**
+> Remember: **If you create this config file, the default mechanism will be disabled.**
