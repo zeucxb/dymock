@@ -12,12 +12,17 @@ const checkUrlConfig = () => {
 const urlConfig = (checkUrlConfig)();
 
 const paramsResponse = (url, params, res) => {
-  const strPath = `${url}/config.js`;
-  const filePath = `${localDir}/${strPath}`;
+  const filePath = `${localDir}/${url}/config`;
+
+  let configFile;
 
   try {
-    const configFile = require(filePath);
+    configFile = require(`${filePath}.js`);
+  } catch (err) {
+    configFile = require(`${filePath}.json`);
+  }
 
+  try {
     let responseMatch = R.find((option) => R.whereEq(
       R.prop('params', option), params
     ), R.prop('options', configFile));
@@ -61,7 +66,7 @@ const parseUrl = (url) => {
 
     return urlMatch.path;
   } else {
-    return `url/${url}`;
+    return `url${url}`;
   }
 }
 
