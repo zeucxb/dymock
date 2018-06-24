@@ -1,14 +1,12 @@
 #!/usr/bin/env node
 
-/**
- * Module dependencies.
- */
-
 const program = require('commander');
+
 const app = require('../src/app');
+const package = require('../package.json');
 
 program
-  .version('0.1.0')
+  .version(package.version)
   .option('-p, --peppers', 'Add peppers')
   .option('-P, --pineapple', 'Add pineapple')
   .option('-b, --bbq-sauce', 'Add bbq sauce')
