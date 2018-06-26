@@ -3,7 +3,7 @@ const localDir = process.cwd();
 
 const checkUrlConfig = () => {
   try {
-    return require(`${localDir}/url.config.json`);
+    return require(`${localDir}/.url-config.json`);
   } catch (err) {
     return false;
   }
