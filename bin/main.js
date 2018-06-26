@@ -2,7 +2,7 @@
 
 const program = require('commander');
 
-const app = require('../src/app');
+const { commandControl } = require('../src/lib/resolvers/commands');
 const package = require('../package.json');
 
 program
@@ -10,4 +10,4 @@ program
   .option('-p, --port [number]', 'Add the port where server will run', '3000')
   .parse(process.argv);
 
-app(program);
+commandControl(program);
