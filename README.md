@@ -139,7 +139,7 @@ dymock -v
 
 If you want to change the dir structure, you can define were each path will look for the config file.
 
-To do that you need to create a `url.config.json` file in your project root.
+To do that you need to create a `.url-config.json` file in your project root.
 
 e.g.
 ```json
