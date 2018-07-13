@@ -28,7 +28,7 @@ npm install -g dymock
 
 ### Usage
 
-By default dymock will try to find a config `(.config)` file in a dir based on the request url.
+By default dymock will try to find a `.config` file in a dir based on the request url.
 
 e.g.
 ```
