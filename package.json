@@ -1,6 +1,6 @@
 {
   "name": "dymock",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "description": "A CLI to simplify the way you create mocks, dynamic REST APIs mocks.",
   "main": "main.js",
   "bin": "bin/main.js",
