@@ -1,7 +1,7 @@
 {
   "name": "dymock",
-  "version": "0.2.0",
-  "description": "A CLI to simplify the way you create docs and mocks.",
+  "version": "0.3.0",
+  "description": "A CLI to simplify the way you create mocks, dynamic REST APIs mocks.",
   "main": "main.js",
   "bin": "bin/main.js",
   "scripts": {
