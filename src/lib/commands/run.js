@@ -1,8 +1,8 @@
 const express = require('express');
 const bodyParser = require('body-parser')
 
-const { parseUrl } = require('./lib/parsers/url');
-const { responseControl } = require('./lib/resolvers/responses');
+const { parseUrl } = require('../parsers/url');
+const { responseControl } = require('../resolvers/responses');
 
 const app = express();
 
