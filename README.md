@@ -28,18 +28,18 @@ npm install -g dymock
 
 ### Usage
 
-By default dymock will try to find a config file in a dir based on the request url.
+By default dymock will try to find a config `(.config)` file in a dir based on the request url.
 
 e.g.
 ```
 GET /user/login
-DIR ./url/user/login/(config.js OR config.json)
+DIR ./url/user/login/(.config.js OR .config.json)
 ```
 
 ---
 
 
-The config file need to be named as `config` and is responsible to define two things:
+The config file need to be named as `.config` and is responsible to define two things:
 
  - **options:** a list (array) of:
  	- **params:** the params that we can match in. `You don't need to set all the request, just params that you wanna match.`
