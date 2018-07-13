@@ -7,7 +7,7 @@ const responseHandler = (url, params, res) => {
 
   const sendErr = err => {
     res.status(404).send(`'${url}' (Not Found!)`);
-    console.warn("Response: 404 ${url}");
+    console.warn(`Response: 404 ${url}`);
 
     if (err) console.error(err);
   }

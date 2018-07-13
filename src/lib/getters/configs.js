@@ -10,7 +10,7 @@ const getUrlConfig = () => {
   }
 };
 
-const getConfigPath = (url) => `${LOCAL_DIR}/${url}/config`;
+const getConfigPath = (url) => `${LOCAL_DIR}/${url}/.config`;
 
 const getConfigFileByPath = (filePath) => {
   try {
