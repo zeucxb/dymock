@@ -151,7 +151,7 @@ e.g.
   {
     "url": "post/create/new",
     "path": "./post"
-  },
+  }
 ]
 ```
 > Remember: **If you create this config file, the default mechanism will be disabled.**
