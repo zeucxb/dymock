@@ -2,8 +2,7 @@ const chalk = require('chalk');
 
 const { getUrlConfig } = require('../getters/configs');
 const { getUrlFilePaths, getUrlsFromJson } = require('../getters/urls');
-
-const LOCAL_URL_DIR = `${process.cwd()}/url`;
+const { LOCAL_URL_DIR } = require('../constants/index');
 
 const removeLocalDir = (path = '', dir) => {
     return path && path.replace(dir, '');

@@ -1,9 +1,10 @@
 const klawSync = require('klaw-sync');
 const R = require('ramda');
 
+const { LOCAL_URL_DIR } = require('../constants/index');
+
 const getUrlFilePaths = () => {
     const options = { nofile: true };
-    const LOCAL_URL_DIR = `${process.cwd()}/url`;
     const paths = klawSync(LOCAL_URL_DIR, options);
     return paths;
 }
