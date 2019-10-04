@@ -17,26 +17,23 @@ const createLogMessage = (urls) => {
     console.log('\n\n');
 }
 
-const listRoutes = (program) => {
-    if (program.list) {
-        const urlConfig = getUrlConfig();
-        if(urlConfig) {
-            const urls = getUrlsFromJson(urlConfig);
-            createLogMessage(urls);
-            process.exit(0);
-        }
-        try {
-            const paths = getUrlFilePaths().map((item) => removeLocalDir(item.path, LOCAL_URL_DIR));
-            createLogMessage(paths);
-
-        } catch (e) {
-            console.error('Url path does\'t exist', e);
-        }
-
+const listRoutes = () => {
+    const urlConfig = getUrlConfig();
+    if(urlConfig) {
+        const urls = getUrlsFromJson(urlConfig);
+        createLogMessage(urls);
         process.exit(0);
     }
-}
+    try {
+        const paths = getUrlFilePaths().map((item) => removeLocalDir(item.path, LOCAL_URL_DIR));
+        createLogMessage(paths);
 
+    } catch (e) {
+        console.error('Url path does\'t exist', e);
+    }
+
+    process.exit(0);
+}
 module.exports = {
     listRoutes,
     getUrlFilePaths
