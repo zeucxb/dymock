@@ -1,6 +1,6 @@
 const { pipe } = require('ramda');
 
-const LOCAL_DIR = process.cwd();
+const { LOCAL_DIR } = require('../constants/index')
 
 const getUrlConfig = () => {
   try {

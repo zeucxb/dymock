@@ -8,6 +8,7 @@ const package = require('../package.json');
 program
   .version(package.version, '-v, --version')
   .option('-p, --port [number]', 'Add the port where server will run', '3000')
+  .option('-l, --list', 'list all avaible routes')
   .parse(process.argv);
 
 commandControl(program);
